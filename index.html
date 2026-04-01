@@ -4,112 +4,113 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beenish | Portfolio</title>
-
 <style>
-body {
+html, body {
     margin: 0;
-    font-family: Arial;
-    background: #f4f4f4;
-    text-align: center;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0f7fa;
+    overflow: hidden; /* No scroll */
 }
 
-/* Header */
-header {
-    background: #333;
-    padding: 30px;
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #006064, #00bfa5);
     color: white;
 }
 
-header h1 {
-    margin: 0;
+/* Left side */
+.left {
+    text-align: center;
+    margin-right: 50px;
+}
+
+.left img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #7CFC00; /* Parrot green */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.left h1 {
     color: #7CFC00; /* Parrot green */
+    margin: 10px 0;
 }
 
-header p {
-    color: #ddd;
+.left p {
+    font-size: 18px;
+    color: #b2ebf2;
 }
 
-/* Sections */
-section {
-    padding: 20px;
+/* Right side */
+.right {
+    max-width: 500px;
 }
 
-.card {
-    background: white;
-    margin: 15px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px gray;
+.right h2 {
+    border-bottom: 2px solid #7CFC00;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* Text */
-p {
-    color: black;
+.right p {
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
-/* Button */
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
+    margin-right: 10px;
     background: #7CFC00;
-    color: black;
+    color: #004d40;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: black;
+    background: #004d40;
     color: #7CFC00;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
 }
 </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Beenish</h1>
-    <p>Student | Future Web Developer</p>
-</header>
+<div class="container">
 
-<section>
+    <div class="left">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Profile Picture">
+        <h1>Beenish</h1>
+        <p>Web Developer | Student</p>
+    </div>
 
-<div class="card">
-    <h2>About Me</h2>
-    <p>Hello! I am <b style="color:#7CFC00;">Beenish</b>, a student exploring web development.</p>
+    <div class="right">
+        <h2>About Me</h2>
+        <p>Hello! I am <span style="color:#7CFC00; font-weight:bold;">Beenish</span>. I create web projects and learn new web technologies.</p>
+
+        <h2>Skills</h2>
+        <p>HTML | CSS | JavaScript | GitHub | Responsive Design</p>
+
+        <h2>Contact</h2>
+        <p>Email: beenish@email.com<br>Phone: +92 300 0000000</p>
+
+        <a href="#" class="btn">View Projects</a>
+        <a href="#" class="btn">Contact Me</a>
+    </div>
+
 </div>
-
-<div class="card">
-    <h2>My Skills</h2>
-    <p>HTML | CSS | JavaScript | GitHub</p>
-</div>
-
-<div class="card">
-    <h2>My Projects</h2>
-    <p>Portfolio Website (This site)</p>
-    <a href="#" class="btn">View Project</a>
-</div>
-
-<div class="card">
-    <h2>Contact</h2>
-    <p>Email: inocentgirl417@gmail.com</p>
-    <a href="#" class="btn">Contact Me</a>
-</div>
-
-</section>
-
-<footer>
-    <p>© 2026 Beenish</p>
-</footer>
 
 </body>
 </html>
